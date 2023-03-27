@@ -25,6 +25,7 @@ class ForkWait(unittest.TestCase):
     def setUp(self):
         self._threading_key = support.threading_setup()
         self.alive = {}
+        
         self.stop = 0
         self.threads = []
 
