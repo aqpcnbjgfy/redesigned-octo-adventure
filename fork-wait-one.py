@@ -67,6 +67,7 @@ class ForkWait(unittest.TestCase):
             self.threads.append(thread)
 
         # busy-loop to wait for threads
+        
         deadline = time.monotonic() + 10.0
         while len(self.alive) < NUM_THREADS:
             time.sleep(0.1)
