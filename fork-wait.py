@@ -3,6 +3,7 @@
 To test different wait behavior, override the wait_impl method.
 
 We want fork1() semantics -- only the forking thread survives in the
+
 child after a fork().
 
 On some systems (e.g. Solaris without posix threads) we find that all
